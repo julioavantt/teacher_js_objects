@@ -1,0 +1,23 @@
+<script>
+ const diccionario = {
+  paciencia: "Capacidad de soportar contratiempos con serenidad.",
+  humildad:
+   "Cualidad de reconocer las propias limitaciones y actuar sin orgullo.",
+  curiosidad: "Deseo de aprender o conocer algo nuevo.",
+  gratitud: "Actitud de reconocimiento y aprecio por lo recibido.",
+ };
+
+ let seek = prompt(`BUSCAR SIGNIFICADO POR PALABRA`);
+
+ switch (seek) {
+  case "curiosidad":
+  case "humildad":
+  case "gratitud":
+  case "paciencia":
+   alert(diccionario[seek]);
+  case "salir":
+   break;
+  default:
+   seek = prompt(`BUSCAR SIGNIFICADO POR PALABRA`);
+ }
+</script>
